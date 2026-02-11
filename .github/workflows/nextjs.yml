@@ -75,6 +75,7 @@ jobs:
         run: |
           cat << 'EOF' > .env.local
           echo "创建空的环境变量文件" > .env.local
+          
           EOF
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
